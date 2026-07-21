@@ -1,0 +1,13 @@
+{"file":"fightNum_baoJiZhiLiao.png","frames":{
+"-":{"x":2,"y":226,"w":33,"h":13,"offX":0,"offY":15,"sourceW":33,"sourceH":43},
+"0":{"x":2,"y":2,"w":33,"h":43,"offX":0,"offY":0,"sourceW":33,"sourceH":43},
+"1":{"x":2,"y":179,"w":21,"h":43,"offX":6,"offY":0,"sourceW":33,"sourceH":43},
+"2":{"x":74,"y":96,"w":31,"h":43,"offX":1,"offY":0,"sourceW":33,"sourceH":43},
+"3":{"x":38,"y":96,"w":32,"h":43,"offX":1,"offY":0,"sourceW":33,"sourceH":43},
+"4":{"x":76,"y":2,"w":33,"h":43,"offX":0,"offY":0,"sourceW":33,"sourceH":43},
+"5":{"x":38,"y":49,"w":32,"h":43,"offX":1,"offY":0,"sourceW":33,"sourceH":43},
+"6":{"x":2,"y":96,"w":32,"h":43,"offX":0,"offY":0,"sourceW":33,"sourceH":43},
+"7":{"x":39,"y":2,"w":33,"h":43,"offX":0,"offY":0,"sourceW":33,"sourceH":43},
+"8":{"x":2,"y":49,"w":32,"h":43,"offX":0,"offY":0,"sourceW":33,"sourceH":43},
+"9":{"x":74,"y":49,"w":32,"h":43,"offX":0,"offY":0,"sourceW":33,"sourceH":43},
+"+":{"x":2,"y":143,"w":32,"h":32,"offX":2,"offY":5,"sourceW":36,"sourceH":40}}}
