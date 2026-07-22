@@ -6,13 +6,11 @@ import time
 app = Flask(__name__)
 PORT = int(os.environ.get('PORT', 5000))
 
-activity_data = {}
-
 @app.route('/')
 def home():
-    return "Private Server Debug Mode", 200
+    return "Debug Server - Resource OK", 200
 
-# Resource
+# Resource - Debug
 @app.route('/resource/')
 @app.route('/resource/<path:path>')
 def serve_resource(path=""):
@@ -20,19 +18,15 @@ def serve_resource(path=""):
     try:
         if not path:
             return "Resource root OK", 200
-        
-        # Debug
         full = os.path.join(directory, path)
-        print(f"Requested: {path} | Full: {full} | Exists: {os.path.exists(full)}")
-        
+        print(f"[RESOURCE] Requested: {path} | Exists: {os.path.exists(full)}")
         if os.path.exists(full):
             if os.path.isdir(full):
-                return f"Directory OK: {path}", 200
+                return f"Dir OK: {path}", 200
             return send_from_directory(directory, path)
-        else:
-            return f"NOT FOUND: {path}", 404
+        return f"Missing: {path}", 404
     except Exception as e:
-        return f"Error: {str(e)}", 500
+        return f"Res Error: {str(e)}", 404
 
 # Static
 @app.route('/static/<path:path>')
@@ -49,28 +43,24 @@ def serve_other(path):
     except:
         return "Not Found", 404
 
-# API Debug
+# API - Debug chi tiết
 @app.route('/api/<path:endpoint>', methods=['GET', 'POST'])
 def fake_api(endpoint):
-    print(f"[DEBUG API] {request.method} /api/{endpoint} | Args: {request.args} | Body: {request.get_json(silent=True)}")
+    print(f"[API DEBUG] {request.method} /api/{endpoint} | Query: {request.args.to_dict()} | Body: {request.get_json(silent=True)}")
     
-    if any(x in endpoint.lower() for x in ["login", "auth", "user", "player", "init", "get_ver", "server"]):
-        return jsonify({
-            "code": 0,
-            "data": {
-                "user_id": 1000001,
-                "nickname": "DebugPlayer",
-                "level": 999,
-                "vip_level": 12,
-                "token": "debug_token",
-                "server_time": int(time.time())
-            }
-        })
-    
-    if any(x in endpoint.lower() for x in ["activity", "event", "task", "reward"]):
-        return jsonify({"code": 0, "data": activity_data})
-    
-    return jsonify({"code": 0, "data": {}})
+    # Fake hầu hết các endpoint game hay gọi
+    return jsonify({
+        "code": 0,
+        "msg": "success",
+        "data": {
+            "user_id": 1000001,
+            "nickname": "DebugPlayer",
+            "level": 999,
+            "vip_level": 12,
+            "token": "debug_token_123",
+            "server_time": int(time.time())
+        }
+    })
 
 if __name__ == '__main__':
     print("=== DEBUG SERVER STARTED ===")
