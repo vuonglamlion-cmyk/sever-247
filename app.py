@@ -62,6 +62,13 @@ def fake_api(endpoint):
         }
     })
 
+@app.route('/manifest.json')
+def manifest():
+    return jsonify({
+        "initial": ["js/egret.min.js", "js/game.min.js"],
+        "game": ["js/main.min.js"]
+    })
+
 if __name__ == '__main__':
     print("=== DEBUG SERVER STARTED ===")
     app.run(host='0.0.0.0', port=PORT, debug=True)
