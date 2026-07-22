@@ -10,7 +10,7 @@ TỔNG HỢP FILE LIÊN QUAN ĐẾN SERVER - GAME TIÊN NGHỊCH MOBILE (com.joy
 
 3. index.html / index_vn.html
    - File khởi chạy game (Egret engine)
-   - index_vn.html có hardcode: GameConfig.resPath = "https://server-247.onrender.com/resource"
+   - index_vn.html có hardcode: GameConfig.resPath = "https://sever-247.onrender.com/resource"
      (server chứa resource/asset cho bản Việt Nam)
 
 4. game_manifest.json
