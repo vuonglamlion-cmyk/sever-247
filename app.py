@@ -16,12 +16,23 @@ def home():
 @app.route('/resource/')
 @app.route('/resource/<path:path>')
 def serve_resource(path=""):
+    directory = 'static/resource'
     try:
         if not path:
-            return "Resource OK", 200
-        return send_from_directory('static/resource', path)
+            return "Resource root OK", 200
+        
+        # Debug
+        full = os.path.join(directory, path)
+        print(f"Requested: {path} | Full: {full} | Exists: {os.path.exists(full)}")
+        
+        if os.path.exists(full):
+            if os.path.isdir(full):
+                return f"Directory OK: {path}", 200
+            return send_from_directory(directory, path)
+        else:
+            return f"NOT FOUND: {path}", 404
     except Exception as e:
-        return f"Resource Error: {str(e)}", 404
+        return f"Error: {str(e)}", 500
 
 # Static
 @app.route('/static/<path:path>')
