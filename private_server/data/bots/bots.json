@@ -1,0 +1,24 @@
+{
+  "bots": [
+    {"name": "BotVIP1", "level": 999, "power": 999999, "vip_level": 15},
+    {"name": "BotVIP2", "level": 950, "power": 950000, "vip_level": 14},
+    {"name": "BotVIP3", "level": 900, "power": 900000, "vip_level": 13},
+    {"name": "BotVIP4", "level": 850, "power": 850000, "vip_level": 12},
+    {"name": "BotVIP5", "level": 800, "power": 800000, "vip_level": 11},
+    {"name": "BotVIP6", "level": 750, "power": 750000, "vip_level": 10},
+    {"name": "BotVIP7", "level": 700, "power": 700000, "vip_level": 9},
+    {"name": "BotVIP8", "level": 650, "power": 650000, "vip_level": 8},
+    {"name": "BotVIP9", "level": 600, "power": 600000, "vip_level": 7},
+    {"name": "BotVIP10", "level": 550, "power": 550000, "vip_level": 6},
+    {"name": "Bot1", "level": 500, "power": 500000, "vip_level": 5},
+    {"name": "Bot2", "level": 450, "power": 450000, "vip_level": 4},
+    {"name": "Bot3", "level": 400, "power": 400000, "vip_level": 3},
+    {"name": "Bot4", "level": 350, "power": 350000, "vip_level": 2},
+    {"name": "Bot5", "level": 300, "power": 300000, "vip_level": 1},
+    {"name": "Bot6", "level": 250, "power": 250000, "vip_level": 0},
+    {"name": "Bot7", "level": 200, "power": 200000, "vip_level": 0},
+    {"name": "Bot8", "level": 150, "power": 150000, "vip_level": 0},
+    {"name": "Bot9", "level": 100, "power": 100000, "vip_level": 0},
+    {"name": "Bot10", "level": 50, "power": 50000, "vip_level": 0}
+  ]
+}

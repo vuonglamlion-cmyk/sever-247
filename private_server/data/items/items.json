@@ -1,0 +1,6 @@
+{
+  "1": {"name": "Tiên Ngọc", "price": 100, "type": "currency"},
+  "2": {"name": "Đột Phá Đan", "price": 500, "type": "consumable"},
+  "3": {"name": "Kiếm Bạch Hổ", "price": 10000, "type": "weapon", "power": 50},
+  "4": {"name": "Áo Bào Tiên", "price": 8000, "type": "armor", "power": 30}
+}

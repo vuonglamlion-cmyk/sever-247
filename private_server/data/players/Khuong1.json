@@ -1,0 +1,15 @@
+{
+  "user_id": 100001,
+  "username": "Khuong1",
+  "nickname": "Khuong1",
+  "level": 1,
+  "exp": 0,
+  "vip_level": 0,
+  "server_id": 1,
+  "gold": 0,
+  "token": "private_token_Khuong1",
+  "inventory": [],
+  "characters": [
+    {"id": 1, "name": "Khuong1", "level": 1, "class": "Kiếm Sĩ", "power": 100}
+  ]
+}
